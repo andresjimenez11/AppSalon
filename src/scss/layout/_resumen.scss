@@ -1,0 +1,47 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenido-resumen{
+
+    span {
+        color: v.$azul;
+        font-weight: v.$bold;
+        font-size: 2.4rem;
+    }
+
+    h3:first-of-type {
+        margin-bottom: 0; 
+    }
+
+    h3:last-of-type {
+        margin: 4rem 0 4rem 0;
+    }
+
+    .boton {
+        margin-top: 6rem;
+    }
+    
+}
+
+.contenedor-servicio {
+    padding: 3rem 0;
+    border-bottom: 1px solid v.$gris;
+
+    &:first-of-type {
+        border-top: 1px solid, v.$gris;
+        margin-top: 4rem;
+    }
+
+    &:last-of-type {
+        margin-bottom: 4rem;
+    }
+}
+
+.contenedor-total-servicio {
+    padding: 3rem 0;
+    border-bottom: 1px solid v.$gris;
+
+    p {
+        font-weight: 700;
+    }
+}
